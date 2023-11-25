@@ -8,6 +8,14 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
+<style>
+    .slick-slide{
+        margin: 0 10px;
+    }
+    .slick-list{
+        margin: 0 -10px;
+    }
+</style>
 <body class="bg-gray-300">
 
     <header>
@@ -22,7 +30,7 @@
                     <li class="text-[#401C1C] font-medium p-3 text-base">Hướng dẫn </li>
                 </ul>
                 <div class="mr-24">
-                    <div class="flex">
+                    <div class="md:flex">
                         <div class="w-[100px] h-[32px] bg-[#264293] rounded-full flex justify-center items-center mr-5">
                             <a class=" p-2 text-white  text-xs " href="">Đăng nhập</a>
                         </div>
@@ -75,49 +83,53 @@
     
     <section class="mt-4">
         <div class=" mx-auto">
-            <div class="flex">
-                <div class="w-1/2 relative">
+            <div class="md:flex">
+                <div class="md:w-1/2 w-full relative">
                     <div class="news-slide">
                         <div class="relative ">
                             <img class="brightness-50 h-[673px] w-full object-cover" src="/img/Rectangle_1334.png" alt="">
                             <div class="absolute top-0 left-10">
                                 <h3 class="text-xs px-2 py-1 bg-blue-400 text-white" >VIỆT NAM HÔM NAY</h3>
                             </div>
-                            <div class="absolute w-full bottom-0 px-5">
-                                <p class="text-white font-semibold text-xs">Doanh thu 157 tỷ đồng/năm, startup gia vị khiến 3 shark tranh ...</p>
+                            <div class="absolute w-full bottom-0 px-4">
+                                <p class="text-white font-semibold text-base">Doanh thu 157 tỷ đồng/năm, startup gia vị khiến 3 shark tranh ...</p>
                                 <div class="flex items-center py-3">
-                                    <div class="flex items-center justify-between w-2/5">
-                                        <div class="flex items-center">
-                                            <img class="w-6 h-6 rounded-full mr-2" src="https://dummyimage.com/80x80" alt="">
-                                            <p class="text-white font-light text-[11px] ">Thảo Vi</p>
+                                    <div class="md:flex items-center justify-between w-1/2  ">
+                                        <div class="w-auto h-full flex items-center md:py-0 my-2">
+                                            <img class="w-[50px] h-[50px] object-cover mr-2" src="./img/Group_1277.png" alt="">
+                                            <div>
+                                                <h3 class="text-base text-white font-light" >Thảo vi</h3>
+                                            </div>
                                         </div>
                                         <div class="flex items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-clock mr-2" viewBox="0 0 16 16">
                                                 <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
                                                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
                                             </svg>
-                                            <p class="text-white font-light text-[11px] border-r pr-2 ">11:00</p>
-                                            <p class="text-white font-light text-[11px] px-2 ">27/01/2005</p>
+                                            <p class="text-white font-light text-base border-r pr-2 ">11:00</p>
+                                            <p class="text-white font-light text-base px-2 ">27/01/2005</p>
                                             </div>
                                     </div>
-                                    <div class="flex items-center w-[327px] mx-auto justify-between ">
-                                        <div class="flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
-                                                <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                    <div class="flex items-center md:w-1/3 w-1/2 mx-auto md:justify-around justify-between ">
+                                        <div class="flex items-center text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
                                             </svg>
-                                            <p class="text-white font-light text-[11px] pl-1 ">16</p>
+                                            <p class="text-white font-light text-base pl-1 ">16</p>
                                         </div>
-                                        <div class="flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-                                                <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                                        <div class="flex items-center text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
                                             </svg>
-                                            <p class="text-white font-light text-[11px] pl-1 ">124</p>
+                                            <p class="text-white font-light text-base pl-1 ">124</p>
                                         </div>
-                                        <div class="flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                                        <div class="flex items-center text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
+                                                <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z"/>
                                             </svg>
-                                            <p class="text-white font-light text-[11px] pl-1 ">5</p>
+                                            <p class="text-white font-light text-base pl-1 ">5</p>
                                         </div>
                                     </div>
                                 </div>
@@ -133,9 +145,9 @@
                                 <p class="text-white font-semibold text-xs">Doanh thu 157 tỷ đồng/năm, startup gia vị khiến 3 shark tranh ...</p>
                                 <div class="flex items-center py-3">
                                     <div class="flex items-center justify-between w-2/5">
-                                        <div class="flex items-center">
-                                            <img class="w-6 h-6 rounded-full mr-2" src="https://dummyimage.com/80x80" alt="">
-                                            <p class="text-white font-light text-[11px] ">Thảo Vi</p>
+                                        <div class="flex items-center md:w-1/2 w-full ">
+                                            <img class="w-10 h-10 rounded-full mr-2 object-cover" src="./img/Group_1277.png" alt="">
+                                            <p class="text-black font-light text-[14px] ">Thảo Vi</p>
                                         </div>
                                         <div class="flex items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-clock mr-2" viewBox="0 0 16 16">
@@ -183,13 +195,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/4 flex flex-col justify-between  h-[673px] mx-[21px]  ">
+                <div class="md:w-1/4 w-full flex flex-col justify-between  h-[673px] md:mx-[21px] md:mt-0 mt-4 ">
                     <div class="w-full h-[326px]">
                         <img class="brightness-50 w-full h-[182px] object-cover" src="https://media.freshbooks.com/wp-content/uploads/2021/11/business-development-plan.jpg" alt="">
                         <div class="bg-white h-[144px] ">
-                            <div class="px-6 flex h-full px-[11px] py-2  flex-col">
+                            <div class="md:px-[11px] px-8 flex h-full  py-2  flex-col">
                                 <h3 class="text-[16px] text-justify font-bold ">Doanh thu 157 tỷ đồng/năm, startup gia vị khiến 3 shark tank tranh giành chốt deal</h3>
-                                <div class="flex items-center justify-between mt-auto px-[29px]">
+                                <div class="flex items-center justify-between mt-auto md:px-[29px] px-2">
                                     <div class="flex items-center w-2/5 ">
                                         <img class="w-10 h-10 rounded-full mr-2 object-cover" src="./img/Group_1277.png" alt="">
                                         <p class="text-black font-light text-[14px] ">Thảo Vi</p>
@@ -214,12 +226,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full  h-[326px]">
+                    <div class="w-full h-[326px]">
                         <img class="brightness-50 w-full h-[182px] object-cover" src="https://media.freshbooks.com/wp-content/uploads/2021/11/business-development-plan.jpg" alt="">
                         <div class="bg-white h-[144px] ">
-                            <div class="px-6 flex h-full px-[11px] py-2  flex-col">
+                            <div class="md:px-[11px] px-8 flex h-full  py-2  flex-col">
                                 <h3 class="text-[16px] text-justify font-bold ">Doanh thu 157 tỷ đồng/năm, startup gia vị khiến 3 shark tank tranh giành chốt deal</h3>
-                                <div class="flex items-center justify-between mt-auto px-[29px]">
+                                <div class="flex items-center justify-between mt-auto md:px-[29px] px-2">
                                     <div class="flex items-center w-2/5 ">
                                         <img class="w-10 h-10 rounded-full mr-2 object-cover" src="./img/Group_1277.png" alt="">
                                         <p class="text-black font-light text-[14px] ">Thảo Vi</p>
@@ -244,8 +256,9 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="w-1/4">
+                <div class="md:w-1/4 w-full">
                     <div class="bg-white min-h-full w-full">
                         <div class="pt-6 ">
                             <div class="flex">
@@ -335,7 +348,7 @@
                 </div>
                 <div class="w-full mx-auto relative">
                     <div class="watch-slide flex ">
-                        <div class="relative w-1/4 mx-2">
+                        <div class="relative w-1/4 ">
                             <img class="brightness-50 w-full h-[430px]  object-cover" src="./img/Rectangle_1355.png" alt="">
                             <div class="absolute bottom-0 px-5">
                                 <p class="text-white font-semibold py-2 text-sm">Lorem ipsum dolor sit amet</p>
@@ -348,7 +361,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="relative w-1/4 mx-2">
+                        <div class="relative w-1/4 ">
                             <img class="brightness-50 w-full h-[430px]  object-cover" src="/img/Rectangle_1355.png" alt="">
                             <div class="absolute bottom-0 px-5">
                                 <p class="text-white font-semibold py-2 text-sm">Lorem ipsum dolor sit amet</p>
@@ -361,7 +374,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="relative w-1/4 mx-2">
+                        <div class="relative w-1/4 ">
                             <img class="brightness-50 w-full h-[430px]  object-cover" src="/img/Rectangle_1355.png" alt="">
                             <div class="absolute bottom-0 px-5">
                                 <p class="text-white font-semibold py-2 text-sm">Lorem ipsum dolor sit amet</p>
@@ -374,7 +387,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="relative w-1/4 mx-2">
+                        <div class="relative w-1/4 ">
                             <img class="brightness-50 w-full h-[430px]  object-cover" src="/img/Rectangle_1355.png" alt="">
                             <div class="absolute bottom-0 px-5">
                                 <p class="text-white font-semibold py-2 text-sm">Lorem ipsum dolor sit amet</p>
@@ -387,7 +400,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="relative w-1/4 mx-2">
+                        <div class="relative w-1/4 ">
                             <img class="brightness-50 w-full h-[430px]  object-cover" src="/img/Rectangle_1355.png" alt="">
                             <div class="absolute bottom-0 px-5">
                                 <p class="text-white font-semibold py-2 text-sm">Lorem ipsum dolor sit amet</p>
@@ -400,7 +413,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="relative w-1/4 mx-2">
+                        <div class="relative w-1/4 ">
                             <img class="brightness-50 w-full h-[430px]  object-cover" src="/img/Rectangle_1355.png" alt="">
                             <div class="absolute bottom-0 px-5">
                                 <p class="text-white font-semibold py-2 text-sm">Lorem ipsum dolor sit amet</p>
@@ -440,8 +453,8 @@
             </div>
         </div>
     </section>
-    <section class="mt-5 flex"  >
-        <div class="w-1/4 ">
+    <section class="mt-5 md:flex"  >
+        <div class="md:w-1/4 w-full ">
             <div class="w-full bg-white">
                 <div class="p-5">
                     <div class="flex">
@@ -553,10 +566,10 @@
            
            
         </div>
-        <div class="w-1/2">
-            <div class="mx-4">
+        <div class="md:w-1/2 w-full md:mx-[21px]">
+            <div class="">
                 <div class="w-full h-[67px] bg-white flex px-4  items-center ">
-                    <div class="w-1/12 h-full mr-4 flex items-center">
+                    <div class="md:w-1/12 w-1/4 h-full mr-4 flex items-center">
                         <img class="w-14 h-14 object-cover" src="./img/Group_1277.png" alt="">
                     </div>
                     <div class="w-11/12 h-full  flex items-center">
@@ -620,23 +633,23 @@
                                 </button>
                             </div>
                         </div>
-//
+
                     </div>
                 </div>
-                <div class="w-full grid grid-cols-2 gap-6 mt-5">
+                <div class="w-full grid grid-cols-2 gap-6 mt-4">
                     <div class="w-full bg-white ">
-                        <div class="p-4 ">
+                        <div class="md:p-4 p-2 ">
                             <div class="flex justify-between items-center">
-                                <div class="w-auto h-full flex items-center">
-                                    <img class="w-[50px] h-[50px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <h3 class="text-base text-gray-500" >Thảo vi</h3>
+                                <div class="w-auto h-full md:flex items-center">
+                                    <img class="w-[50px] h-[50px] object-cover mx-auto mr-2" src="./img/Group_1277.png" alt="">
+                                    <div class="text-center">
+                                        <h3 class="md:text-base text-sm text-gray-500" >Thảo vi</h3>
                                         <p class="text-xs text-gray-500" >14 giờ trước</p>
                                     </div>
                                 </div>
                                 <div class="w-auto">
                                     <div>
-                                        <button class="flex bg-[#264293] text-white text-xs items-center px-4 py-2 rounded-xl ">
+                                        <button class="flex bg-[#264293] text-white text-[10px] items-center md:px-4 px-2 py-2 rounded-xl ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark mr-1" viewBox="0 0 16 16">
                                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
                                             </svg>
@@ -645,21 +658,21 @@
                                 </div>
                             </div>
                             <div>
-                                <h3 class="font-bold text-xl mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</h3>
-                                <p class="text-base mt-2 text-[#3A3A39] text-justify leading-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
+                                <h3 class="font-bold md:text-xl text-base mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</h3>
+                                <p class="md:text-base text-sm mt-2 text-[#3A3A39] text-justify leading-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
                             </div>
                         </div>
                         <div class="w-full">
                             <div>
                                 <img class="w-full h-[220px] object-cover" src="./img/Rectangle 1358.png" alt="">
                             </div>
-                            <div class="flex justify-between  p-3">
+                            <div class="flex justify-between  md:p-3 p-1" >
                                 <div class="w-auto flex justify-center items-center">
                                     <button class="flex justify-center items-center text-[#264293]  ">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Thích</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Thích</p>
                                     </button>
                                 </div>
                                 <div class="w-auto flex justify-center items-center">
@@ -668,7 +681,7 @@
                                             <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                                             <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Bình luận</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Bình luận</p>
                                     </button>
                                 </div>
                                 <div class="w-auto flex justify-center items-center">
@@ -677,7 +690,7 @@
                                             <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
                                             <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Chia sẻ</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Chia sẻ</p>
                                     </button>
                                 </div>
                             </div>
@@ -685,18 +698,18 @@
                         </div>
                     </div>
                     <div class="w-full bg-white ">
-                        <div class="p-4 ">
+                        <div class="md:p-4 p-2 ">
                             <div class="flex justify-between items-center">
-                                <div class="w-auto h-full flex items-center">
-                                    <img class="w-[50px] h-[50px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <h3 class="text-base text-gray-500" >Thảo vi</h3>
+                                <div class="w-auto h-full md:flex items-center">
+                                    <img class="w-[50px] h-[50px] object-cover mx-auto mr-2" src="./img/Group_1277.png" alt="">
+                                    <div class="text-center">
+                                        <h3 class="md:text-base text-sm text-gray-500" >Thảo vi</h3>
                                         <p class="text-xs text-gray-500" >14 giờ trước</p>
                                     </div>
                                 </div>
                                 <div class="w-auto">
                                     <div>
-                                        <button class="flex bg-[#264293] text-white text-xs items-center px-4 py-2 rounded-xl ">
+                                        <button class="flex bg-[#264293] text-white text-[10px] items-center md:px-4 px-2 py-2 rounded-xl ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark mr-1" viewBox="0 0 16 16">
                                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
                                             </svg>
@@ -705,21 +718,21 @@
                                 </div>
                             </div>
                             <div>
-                                <h3 class="font-bold text-xl mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</h3>
-                                <p class="text-base mt-2 text-[#3A3A39] text-justify leading-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
+                                <h3 class="font-bold md:text-xl text-base mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</h3>
+                                <p class="md:text-base text-sm mt-2 text-[#3A3A39] text-justify leading-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
                             </div>
                         </div>
                         <div class="w-full">
                             <div>
                                 <img class="w-full h-[220px] object-cover" src="./img/Rectangle 1358.png" alt="">
                             </div>
-                            <div class="flex justify-between  p-3">
+                            <div class="flex justify-between  md:p-3 p-1" >
                                 <div class="w-auto flex justify-center items-center">
                                     <button class="flex justify-center items-center text-[#264293]  ">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Thích</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Thích</p>
                                     </button>
                                 </div>
                                 <div class="w-auto flex justify-center items-center">
@@ -728,7 +741,7 @@
                                             <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                                             <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Bình luận</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Bình luận</p>
                                     </button>
                                 </div>
                                 <div class="w-auto flex justify-center items-center">
@@ -737,7 +750,7 @@
                                             <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
                                             <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Chia sẻ</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Chia sẻ</p>
                                     </button>
                                 </div>
                             </div>
@@ -745,18 +758,18 @@
                         </div>
                     </div>
                     <div class="w-full bg-white ">
-                        <div class="p-4 ">
+                        <div class="md:p-4 p-2 ">
                             <div class="flex justify-between items-center">
-                                <div class="w-auto h-full flex items-center">
-                                    <img class="w-[50px] h-[50px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <h3 class="text-base text-gray-500" >Thảo vi</h3>
+                                <div class="w-auto h-full md:flex items-center">
+                                    <img class="w-[50px] h-[50px] object-cover mx-auto mr-2" src="./img/Group_1277.png" alt="">
+                                    <div class="text-center">
+                                        <h3 class="md:text-base text-sm text-gray-500" >Thảo vi</h3>
                                         <p class="text-xs text-gray-500" >14 giờ trước</p>
                                     </div>
                                 </div>
                                 <div class="w-auto">
                                     <div>
-                                        <button class="flex bg-[#264293] text-white text-xs items-center px-4 py-2 rounded-xl ">
+                                        <button class="flex bg-[#264293] text-white text-[10px] items-center md:px-4 px-2 py-2 rounded-xl ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark mr-1" viewBox="0 0 16 16">
                                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
                                             </svg>
@@ -765,21 +778,21 @@
                                 </div>
                             </div>
                             <div>
-                                <h3 class="font-bold text-xl mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</h3>
-                                <p class="text-base mt-2 text-[#3A3A39] text-justify leading-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
+                                <h3 class="font-bold md:text-xl text-base mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</h3>
+                                <p class="md:text-base text-sm mt-2 text-[#3A3A39] text-justify leading-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
                             </div>
                         </div>
                         <div class="w-full">
                             <div>
                                 <img class="w-full h-[220px] object-cover" src="./img/Rectangle 1358.png" alt="">
                             </div>
-                            <div class="flex justify-between  p-3">
+                            <div class="flex justify-between  md:p-3 p-1" >
                                 <div class="w-auto flex justify-center items-center">
                                     <button class="flex justify-center items-center text-[#264293]  ">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Thích</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Thích</p>
                                     </button>
                                 </div>
                                 <div class="w-auto flex justify-center items-center">
@@ -788,7 +801,7 @@
                                             <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                                             <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Bình luận</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Bình luận</p>
                                     </button>
                                 </div>
                                 <div class="w-auto flex justify-center items-center">
@@ -797,7 +810,7 @@
                                             <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
                                             <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Chia sẻ</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Chia sẻ</p>
                                     </button>
                                 </div>
                             </div>
@@ -805,18 +818,18 @@
                         </div>
                     </div>
                     <div class="w-full bg-white ">
-                        <div class="p-4 ">
+                        <div class="md:p-4 p-2 ">
                             <div class="flex justify-between items-center">
-                                <div class="w-auto h-full flex items-center">
-                                    <img class="w-[50px] h-[50px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <h3 class="text-base text-gray-500" >Thảo vi</h3>
+                                <div class="w-auto h-full md:flex items-center">
+                                    <img class="w-[50px] h-[50px] object-cover mx-auto mr-2" src="./img/Group_1277.png" alt="">
+                                    <div class="text-center">
+                                        <h3 class="md:text-base text-sm text-gray-500" >Thảo vi</h3>
                                         <p class="text-xs text-gray-500" >14 giờ trước</p>
                                     </div>
                                 </div>
                                 <div class="w-auto">
                                     <div>
-                                        <button class="flex bg-[#264293] text-white text-xs items-center px-4 py-2 rounded-xl ">
+                                        <button class="flex bg-[#264293] text-white text-[10px] items-center md:px-4 px-2 py-2 rounded-xl ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark mr-1" viewBox="0 0 16 16">
                                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
                                             </svg>
@@ -825,21 +838,21 @@
                                 </div>
                             </div>
                             <div>
-                                <h3 class="font-bold text-xl mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</h3>
-                                <p class="text-base mt-2 text-[#3A3A39] text-justify leading-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
+                                <h3 class="font-bold md:text-xl text-base mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</h3>
+                                <p class="md:text-base text-sm mt-2 text-[#3A3A39] text-justify leading-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
                             </div>
                         </div>
                         <div class="w-full">
                             <div>
                                 <img class="w-full h-[220px] object-cover" src="./img/Rectangle 1358.png" alt="">
                             </div>
-                            <div class="flex justify-between  p-3">
+                            <div class="flex justify-between  md:p-3 p-1" >
                                 <div class="w-auto flex justify-center items-center">
                                     <button class="flex justify-center items-center text-[#264293]  ">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Thích</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Thích</p>
                                     </button>
                                 </div>
                                 <div class="w-auto flex justify-center items-center">
@@ -848,7 +861,7 @@
                                             <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                                             <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Bình luận</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Bình luận</p>
                                     </button>
                                 </div>
                                 <div class="w-auto flex justify-center items-center">
@@ -857,7 +870,7 @@
                                             <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
                                             <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z"/>
                                         </svg>
-                                        <p class="text-base ml-1.5">Chia sẻ</p>
+                                        <p class="md:text-base text-[8px] md:ml-1.5 ml-1">Chia sẻ</p>
                                     </button>
                                 </div>
                             </div>
@@ -928,7 +941,7 @@
             </div>
 
         </div>
-        <div class="w-1/4">
+        <div class="md:w-1/4 w-full">
             <div class="w-full ">
                 <img class="object-fill h-[580px] w-full" src="./img/img 1.png" alt="">
             </div>
@@ -993,6 +1006,16 @@
                 slidesToScroll: 1,
                 dots: false,
                 arrows: false,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                    },
+                ]
             });
 
             let watchPrev = $('.watch-arrow .arrow-prev');
