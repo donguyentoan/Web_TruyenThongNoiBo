@@ -11,10 +11,29 @@
     .line_comment::after {
         content: "";
         position: absolute;
-        width: 4px;
+        width: 3px;
         height: 100%;
-        background-color: gray;
-        left: 0;
+        background-color: rgb(229 231 235);
+        left: 22px;
+        top: 0;
+    }
+    .line_comment1::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        background-color: rgb(229 231 235);
+        left: -18px;
+        top: 0;
+    }
+    .last_line_comment::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 23px;
+        background-color: rgb(229 231 235);
+        left: -18px;
+        top: 0;
     }
 </style>
 <body class="bg-gray-300">
@@ -278,7 +297,7 @@
                             </div>
                             <div>
                                 <div class="flex relative ">
-                                    <div class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10">
+                                    <div class="flex-shrink-0 w-fit h-fit rounded-full  inline-flex items-center justify-center text-white relative z-10">
                                         <img class="w-[50px] h-[50px] object-cover " src="./img/Group_1277.png" alt="">
                                     </div>
                                     <div>
@@ -308,15 +327,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-10">
-                                    <div class="flex px-5 relative  after:content-[''] after:w-10 after:h-1 after:bg-gray-200 after:-left-5 after:top-[20px] after:absolute   ">
+                                <div class="px-10 ">
+                                    <div class="flex px-5 relative line_comment1 after:content-[''] after:w-10 after:h-[3px] after:bg-gray-200 after:-left-4 after:top-[20px] after:absolute  ">
                                         <div class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
                                             <img class="w-[40px] h-[40px] object-cover " src="./img/Group_1277.png" alt="">
                                         </div>
                                         <div class="">
                                             <div class="flex-grow pl-4 bg-gray-200 rounded-xl p-2 mx-2">
                                                 <h2 class="title-font font-bold text-sm text-gray-900 mb-1 tracking-wider">Thảo Vi</h2>
-                                                <p class="leading-relaxed text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                <p class="leading-relaxed text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                </p>
                                             </div>
                                             <div class="flex w-3/5 px-4 py-2 justify-between items-center">
                                                 <p class="text-xs text-gray-500" >14 giờ trước</p>
@@ -340,7 +361,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex px-5 relative  after:content-[''] after:w-10 after:h-1 after:bg-gray-200 after:-left-5 after:top-[20px] after:absolute   ">
+                                    <div class="flex px-5 relative last_line_comment  after:content-[''] after:w-10 after:h-[3px] after:bg-gray-200 after:-left-4 after:top-[20px] after:absolute   ">
                                         <div class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
                                             <img class="w-[40px] h-[40px] object-cover " src="./img/Group_1277.png" alt="">
                                         </div>
