@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+        input[type="date"]::-webkit-calendar-picker-indicator {
+    color: red;
+    opacity: 1;
+    display: block;
+    background-repeat:  no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+    background-image: url('./img/Date_range.png') ;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 3%;
+}
+input::-webkit-datetime-edit-fields-wrapper {
+    position: relative;
+    left: 1%;
+    display: none;
+}
+input::-webkit-datetime-edit {
+    position: relative;
+    left: 10%;
+}
+</style>
+<body>
+    <header class="bg-[#EBEAEA]">
+        <div>
+            <img class="md:h-[270px] h-[200px] object-fill" src="./img/Rectangle_1328.png" alt="">
+        </div>
+        <div class="bg-white mt-4">
+            <div class="flex justify-between items-center ">
+                <ul class="flex md:h-[50px] items-center md:ml-4 ">
+                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Trợ giúp</li>
+                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Liên hệ quảng cáo</li>
+                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Hướng dẫn </li>
+                </ul>
+                <div class="md:mr-24">
+                    <div class="md:flex">
+                        <div class="md:w-[100px] md:h-[32px] m-1 bg-[#264293] rounded-full  flex justify-center items-center md:mr-5">
+                            <a class=" px-2 py-1  text-white  text-xs " href="">Đăng nhập</a>
+                        </div>
+                        <div class="md:w-[100px] md:h-[32px] m-1 bg-[#777E90] rounded-full  flex justify-center items-center">
+                        <a class=" px-2 py-1  text-white  text-xs " href="">Đăng ký</a>
+                        </div>
+                    </div>
+
+                </div>
+             </div>
+
+        </div>
+        <div class="w-full  md:pl-9">
+            <div class="md:flex">
+                <div class="pt-2 w-1/7">
+                    <img  class="h-[138px] w-[184px] md:m-0 mx-auto" src="./img/Group_427320855.png" alt="">
+                </div>
+                <div class="pt-4  w-full">
+                    <div class="">
+                        <div class="bg-white w-full flex items-center p-4  md:h-[55px]">
+                            <img class="w-6 h-6 md:ml-4 mr-2" src="./img/Filled.png" alt=""> 
+                             <p class="text-xs text-[#3A3A39] font-semibold"> <span class="text-[#FF3131] font-bold">PBREAKING NEWS:</span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eveniet fugit. Cum amet iusto tempore  </p>  
+                        </div>
+                        <div class="bg-white  items-center md:mt-7 mt-4 md:h-[55px] ">
+                            <div class="flex justify-between w-full ">
+                                <div class="flex w-[90%] items-center ">
+                                    <div class="md:w-auto w-1/5 md:px-6 p-2 flex justify-center items-center bg-[#264293] h-full font-bold  ">
+                                        <p class=" text-xs text-white text-center"> TRANG CHỦ</p>   
+                                    </div>
+                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">CỘNG ĐỒNG INSIDER</div>
+                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">VIỆT NAM HÔM NAY</div>
+                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">QUẢN TRỊ & KHỞI NGHIỆP</div>
+                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">BẢN TIN THẾ GIỚI</div>
+                                </div>
+                                <div  onclick="search()" class="bg-[#264293] w-[10%] md:w-[55px] md:h-[55px] px-2 flex justify-center items-center">
+                                    <img class="md:w-10 md:h-10" src="./img/Search_alt.png" alt="">
+                                </div>
+
+                            </div>
+                           
+                        </div>
+                        <div id="cs_showSearch" class="  bg-[#FAFAFA] mt-4 w-2/3 h-[40px] rounded-full relative  hidden">
+                            <input class=" pl-14 w-full h-full bg-[#FAFAFA] rounded-full   " type="text" placeholder="Search">
+                            <img class="w-5 h-5 absolute top-2.5 left-6" src="./img/Union.png" alt="">
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </header>
+    <section class="pt-4 bg-[#EBEAEA]">
+        <div class="relative">
+            <img class="h-52" src="./img/Rectangle_2797.png" alt="">
+            <img class="w-36 h-36 absolute -bottom-[20px] left-[45%]" src="./img/Ellipse_69.png" alt="">
+          
+        </div>
+        <div class="text-center pt-10 w-2/4 ml-10">
+            <div class="flex justify-between">
+                <p>Số người theo dõi: 4</p>
+                <p>Số người đang theo dõi: 6</p>
+                <p class="text-xl font-bold pl-2">Thảo Vi</p>
+            </div>
+      
+        </div>
+        <div class="w-full   items-center md:mt-7 mt-4  ">
+            <div class="flex  w-full h-[55px] ">
+                <div class="flex w-2/5 justify-between items-center ">
+                    <div class="md:text-sm text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-8  ">TRANG CHỦ</div>
+                    <div class="md:text-sm text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-8  ">BÀI VIẾT</div>
+                    <div class="md:w-auto w-1/5 md:px-8 p-2 flex justify-center items-center bg-[#264293] h-full font-bold  ">
+                        <p class=" text-sm text-white text-center"> TÀI KHOẢN</p>   
+                    </div>
+                </div>
+               
+
+            </div>
+
+           
+        </div>
+
+
+        <div class="pt-10 w-full h-full">
+            <div class="flex ">
+                <div class="w-2/5">
+                    <div class="w-11/12">
+                        <div class="w-full bg-[#264293] h-[62px] flex items-center ">
+                            <h1 class=" pl-8 text-sm text-white font-semibold">Thông tin cá nhân</h1>
+        
+                        </div>
+                        <div class="w-full bg-[#FFFFFF]  h-[62px] flex items-center ">
+                            <h1 class=" pl-8 text-sm text-[#3A3A39]">Đổi mật khẩu</h1>
+        
+                        </div>
+                        <div class="w-full  h-[62px] bg-[#FFFFFF]  flex items-center ">
+                            <h1 class=" pl-8 text-sm text-[#3A3A39]">Đăng xuất</h1>
+        
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="w-3/6 justify-end flex">
+                    <div class="w-11/12">
+                        <h1 class="text-2xl font-bold text-[#3A3A39]">Thông tin cá nhân</h1>
+                        
+                        <div class="h-[50px] my-5">
+                            <p class="text-[#3A3A39] text-sm pb-2">Họ và tên:</p>
+                            <input  class=" pl-2 w-full h-full rounded-3xl placeholder:pl-5 text-sm text-[#3A3A39] " type="email" name="" id="" placeholder="Quynh Cheng">
+                            
+                        </div>
+                        <div class="h-[50px] my-10">
+                            <p class="text-[#3A3A39] text-sm pb-2">Tên người dùng:</p>
+                            <input  class="w-full h-full rounded-3xl placeholder:pl-5 text-sm text-[#3A3A39] " type="email" name="" id="" placeholder="Trang Nguyen">
+                            
+                        </div>
+                        <div class="h-[50px] my-10">
+                            <p class="text-[#3A3A39] text-sm pb-2">Email:</p>
+                            <input  class="w-full h-full rounded-3xl placeholder:pl-5 text-sm text-[#3A3A39] " type="email" name="" id="" placeholder="quynhtrang24122001@gmail.com">
+                            
+                        </div>
+                        <div class="h-[50px] my-10">
+                            <p class="text-[#3A3A39] text-sm pb-2">Số điện thoại:</p>
+                            <input  class="w-full h-full rounded-3xl placeholder:pl-5 text-sm text-[#3A3A39] " type="email" name="" id="" placeholder="0123456789">
+                            
+                        </div>
+                        <div class="h-[50px] pt-3 pb-12  w-2/6">
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#3A3A39] text-sm  flex items-center">Giới tính:</p>
+                                <label class="flex items-center" for="">
+                                    <input  class="w-5 h-5 rounded-3xl placeholder:pl-5 text-sm text-[#3A3A39]  mr-2 " type="radio" name="" id="">
+                                    Nam
+                                </label>
+                                <label class="flex items-center" for="">
+                                    <input  class="w-5 h-5 rounded-3xl placeholder:pl-5 text-sm text-[#3A3A39] mr-2 " type="radio" name="" id="">
+                                    Nữ
+                                </label>
+
+                            </div>
+                            
+                               
+
+                          
+                            
+                            
+                        </div>
+                        <div class="h-[50px]  relative">
+                            <p class="text-[#3A3A39] text-sm pb-2">Ngày sinh:</p>
+                            <input required name="email" class=" w-full   rounded-2xl h-[50px]  text-sm" type="date" placeholder="Ngày sinh">
+                            
+                        </div>
+
+                        <div class="my-10">
+                            <p class="text-[#3A3A39] text-sm pb-2">Giới thiệu:</p>
+                            <textarea class="w-full rounded-2xl pl-3" name="" id="" cols="20" rows="5"></textarea>
+                        </div>
+                        <div class="bg-[#264293]  rounded-2xl my-10 text-center">
+                            <input class="text-white md:w-fit p-3 font-bold text-sm" type="submit" value="Cập nhập tài khoản">
+                        </div>
+                        
+
+                       
+                        
+                    </div>
+                </div>
+                   
+
+               
+               
+            </div>
+           
+        </div>
+       
+    </section>
+    
+</body>
+</html>
