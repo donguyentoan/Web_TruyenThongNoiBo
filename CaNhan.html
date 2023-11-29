@@ -30,6 +30,10 @@ input::-webkit-datetime-edit {
     position: relative;
     left: 10%;
 }
+.active {
+  background-color: #264293;
+  color: white !important;
+}
 </style>
 <body>
     <header>
@@ -75,15 +79,13 @@ input::-webkit-datetime-edit {
                             </div>
                             <div class="bg-white  items-center md:mt-7 mt-4 md:h-[55px] ">
                                 <div class="flex justify-between w-full ">
-                                    <div class="flex w-[90%] items-center ">
-                                        <div class="md:w-auto w-1/5 md:px-6 p-2 flex justify-center items-center bg-[#264293] h-full font-bold  ">
-                                            <p class=" text-xs text-white text-center"> TRANG CHỦ</p>   
-                                        </div>
-                                        <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">CỘNG ĐỒNG INSIDER</div>
-                                        <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">VIỆT NAM HÔM NAY</div>
-                                        <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">QUẢN TRỊ & KHỞI NGHIỆP</div>
-                                        <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">BẢN TIN THẾ GIỚI</div>
-                                    </div>
+                                    <div id="menu_button" class="menu_button flex w-[90%] items-center ">
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">TRANG CHỦ</button>
+                                       <button class="btn active h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">CỘNG ĐỒNG INSIDER</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">VIỆT NAM HÔM NAY</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">QUẢN TRỊ & KHỞI NGHIỆP</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">BẢN TIN THẾ GIỚI</button>
+                                   </div>
                                     <div class="bg-[#264293] w-[10%] md:w-[55px] md:h-[55px] px-2 flex justify-center items-center">
                                         <img class="md:w-10 md:h-10" src="./img/Search_alt.png" alt="">
                                     </div>
