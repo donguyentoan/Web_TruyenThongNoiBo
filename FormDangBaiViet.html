@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<style>
+    .toggle:before {
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    width: 7px;
+    height: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+    top: 2px;
+    left: 5px;
+}
+.toggle:after {
+    content: '×';
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    z-index: 2;
+    line-height: 42px;
+    font-size: 20px;
+    color: #aaa;
+}
+.toggle input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.toggle label:before {
+  content: '';
+  width: 34px;
+  height: 18px;
+  box-shadow: 0 0 1px 2px #0001;
+  background: #eee;
+  position: relative;
+  display: inline-block;
+  border-radius: 46px;
+  transition: 0.2s ease-in;
+}
+.toggle label:after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 0;
+  top: 2px;
+  z-index: 5;
+  background: #fff;
+  box-shadow: 0 0 5px #0002;
+  transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:hover + label:after {
+  box-shadow: 0 2px 15px 0 #0002, 0 3px 8px 0 #0001;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+    transition: 0.1s 0.2s ease-in;
+    background: #4BD865;
+}
+.toggle input[type="checkbox"]:checked + label:after {
+  left: 17px;
+}
+select::-ms-expand {
+  display: none; /* Loại bỏ mũi tên mặc định trong IE */
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Thêm một số padding để căn chỉnh văn bản và mũi tên */
+  /* padding-right: 100px !important; */
+  /* Thêm hình ảnh nền (mũi tên) */
+  background-image: url('./img/Vector\ \(1\).png');
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+
+}
+</style>
+<body class="bg-[#EBEAEA]">
+    <header>
+        <div>
+            <img class="md:h-[270px] h-[200px] w-full object-fill" src="./img/Rectangle_1328.png" alt="">
+        </div>
+        <div class="container mx-auto">
+            <div class="bg-white mt-4">
+                <div class="flex justify-between items-center ">
+                    <ul class="flex md:h-[50px] items-center md:ml-4 ">
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Trợ giúp</li>
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Liên hệ quảng cáo</li>
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Hướng dẫn </li>
+                    </ul>
+                    <div class="md:mr-24">
+                        <div class="md:flex">
+                            <div class="md:w-[100px] md:h-[32px] m-1 bg-[#264293] rounded-full  flex justify-center items-center md:mr-5">
+                                <a class=" px-2 py-1  text-white  text-xs " href="">Đăng nhập</a>
+                            </div>
+                            <div class="md:w-[100px] md:h-[32px] m-1 bg-[#777E90] rounded-full  flex justify-center items-center">
+                            <a class=" px-2 py-1  text-white  text-xs " href="">Đăng ký</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full ">
+                <div class="md:flex">
+                    <div class="pt-2 w-1/7">
+                        <img  class="h-[138px] w-[184px] md:m-0 mx-auto" src="./img/Group_427320855.png" alt="">
+                    </div>
+                    <div class="pt-4  w-full">
+                        <div class="">
+                            <div class="bg-white  ">
+                            <marquee>
+                                <div class="w-full flex items-center md:h-[55px] p-4 ">
+                                    <img class="w-6 h-6 md:ml-4 mr-2" src="./img/Filled.png" alt=""> 
+                                    <p class="text-xs text-[#3A3A39] font-semibold"> <span class="text-[#FF3131] font-bold">PBREAKING NEWS:</span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eveniet fugit. Cum amet iusto tempore  </p>  
+                                </div>
+                                </marquee>
+                            </div>
+                            <div class="bg-white  items-center md:mt-7 mt-4 md:h-[55px] ">
+                                <div class="flex justify-between w-full ">
+                                    <div class="flex w-[90%] items-center ">
+                                        <div class="md:w-auto w-1/5 md:px-6 p-2 flex justify-center items-center bg-[#264293] h-full font-bold  ">
+                                            <p class=" text-xs text-white text-center"> TRANG CHỦ</p>   
+                                        </div>
+                                        <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">CỘNG ĐỒNG INSIDER</div>
+                                        <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">VIỆT NAM HÔM NAY</div>
+                                        <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">QUẢN TRỊ & KHỞI NGHIỆP</div>
+                                        <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">BẢN TIN THẾ GIỚI</div>
+                                    </div>
+                                    <div class="bg-[#264293] w-[10%] md:w-[55px] md:h-[55px] px-2 flex justify-center items-center">
+                                        <img class="md:w-10 md:h-10" src="./img/Search_alt.png" alt="">
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div>
+            <div class=" relative my-4 flex justify-center items-center">
+                <img class="object-cover h-[74px] w-full z-[-1]" src="./img/DangBaiViet.png" alt="">
+                <div class="absolute">
+                    <h3 class="text-white text-2xl font-bold ">ĐĂNG BÀI VIẾT</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="w-full">
+                <div class="md:w-1/2 w-full md:p-0 px-5 mx-auto">
+                    <div>
+                        <div class="w-full">
+                            <h3 class="text-xl text-[#3A3A39] px-6 py-2 ">Tiêu đề</h3>
+                        </div>
+                        <div class="w-full" class="">
+                            <input class="rounded-2xl w-full h-[50px] px-6 " type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full">
+                            <h3 class="text-xl text-[#3A3A39] px-6 py-2">Mô tả ngắn</h3>
+                        </div>
+                        <div class="w-full" class="">
+                            <textarea style="resize: none" class="w-full rounded-3xl px-6" name="" id="" cols="30" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full">
+                            <h3 class="text-xl text-[#3A3A39] px-6 py-2">Nội dung</h3>
+                        </div>
+                        <div class="w-full" class="">
+                            <textarea style="resize: none" class="w-full rounded-3xl px-6" name="" id="" cols="30" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full">
+                            <h3 class="text-xl text-[#3A3A39] px-6 py-2">Danh mục</h3>
+                        </div>
+                        <div class="w-full" class="">
+                            <select class="w-full px-6 rounded-2xl h-[50px] py-2" name="" id="">
+                                <option value="">Cộng đồng Insider</option>
+                                <option value="">Việt Nam hôm nay</option>
+                                <option value="">Quản trị & khởi nghiệp</option>
+                                <option value="">Bản tin thế giới</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full">
+                            <h3 class="text-xl text-[#3A3A39] px-6 py-2 ">Nguồn</h3>
+                        </div>
+                        <div class="w-full" class="">
+                            <input class="rounded-2xl w-full h-[50px] px-6 " type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full">
+                            <h3 class="text-xl text-[#3A3A39] px-6 py-2 ">Ảnh bài viết</h3>
+                        </div>
+                        <div class="w-full bg-white h-[118px] rounded-2xl border border-[#264293] border-dashed  " class="">
+                            <div class="h-full flex justify-center items-center">
+                                <div class="">
+                                    <img class="w-6 h-6 mx-auto" src="./img/arrow-up-square-contained.png" alt="">
+                                    <p class="text-center">Tải ảnh lên</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="w-full my-12">
+                        <button onclick="firstModal.showModal()" class=" bg-[#264293] rounded-2xl h-[50px] w-full text-base font-bold text-white">Đăng bài</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="p-20 py-20 w-11/12 mx-auto flex flex-col gap-9">
+        <dialog id="firstModal" class="bg-transparent rounded-xl  w-1/4 ">
+          <!-- <div class="text-center py-6 bg-white">
+              <h3 >Mind Connector sắp có một hội thảo về cơ hội nghề nghiệp cho GenZ chủ đề</h3>
+              <h2 class="font-extrabold">Tự tạo cơ hội cho mình, tại sao không ?</h2>
+          </div>
+          <div class="bg-[#b32c69] rounded-b-2xl  w-full px-8 py-4">
+              <h1 class=" text-center text-white text-2xl font-extrabold">Đừng bỏ lỡ</h1>
+              <div class="countdown" id="countdown"></div>
+              <div class="my-6 text-center"><button class="bg-[#fe7b2c] px-6 py-2.5 rounded-3xl font-bold text-white">Xem thêm</button></div>
+          </div>
+          -->
+            <div class="bg-white p-3 ">
+                <p class="text-center text-base p-2">Bài viết đã được gửi đến Ban quản trị <br> Sau khi phê duyệt bài viết sẽ được đăng</p>
+                <img class="mx-auto" src="./img/tick.png" alt="">
+            </div>
+            <div class="flex justify-center mt-8 ">
+                <div class="flex w-12 h-12 ">
+                    <button onclick="firstModal.close()" class=" hover:bg-black text-white font-semibold py-2 px-4 w-full border border-white rounded-full shadow">
+                       X
+                    </button>
+                </div>
+            </div> 
+            
+        </dialog>
+    </div>
+</body>
+
+<script>
+    var button_notification = document.querySelector(".button_notification");
+    var notification = document.querySelector(".notification");
+
+    button_notification.addEventListener('click', function() {
+        if (notification.style.display === "none" || notification.style.display === "") {
+            notification.style.display = "block";
+        } else {
+            notification.style.display = "none";
+        }
+    });
+</script>
+</html>

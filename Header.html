@@ -6,71 +6,76 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+    .active {
+        background-color: #264293;
+        color: white !important;
+    }
+</style>
 <body class="bg-[#EBEAEA]">
     <header>
         <div>
-            <img class="md:h-[270px] h-[200px] object-fill" src="./img/Rectangle_1328.png" alt="">
+            <img class="md:h-[270px] h-[200px] w-full object-fill" src="./img/Rectangle_1328.png" alt="">
         </div>
-        <div class="bg-white mt-4">
-            <div class="flex justify-between items-center ">
-                <ul class="flex md:h-[50px] items-center md:ml-4 ">
-                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Trợ giúp</li>
-                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Liên hệ quảng cáo</li>
-                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Hướng dẫn </li>
-                </ul>
-                <div class="md:mr-24">
-                    <div class="md:flex">
-                        <div class="md:w-[100px] md:h-[32px] m-1 bg-[#264293] rounded-full  flex justify-center items-center md:mr-5">
-                            <a class=" px-2 py-1  text-white  text-xs " href="">Đăng nhập</a>
-                        </div>
-                        <div class="md:w-[100px] md:h-[32px] m-1 bg-[#777E90] rounded-full  flex justify-center items-center">
-                        <a class=" px-2 py-1  text-white  text-xs " href="">Đăng ký</a>
-                        </div>
-                    </div>
-
-                </div>
-             </div>
-
-        </div>
-        <div class="w-full  md:pl-9">
-            <div class="md:flex">
-                <div class="pt-2 w-1/7">
-                    <img  class="h-[138px] w-[184px] md:m-0 mx-auto" src="./img/Group_427320855.png" alt="">
-                </div>
-                <div class="pt-4  w-full">
-                    <div class="">
-                        <div class="bg-white w-full flex items-center p-4  md:h-[55px]">
-                            <img class="w-6 h-6 md:ml-4 mr-2" src="./img/Filled.png" alt=""> 
-                             <p class="text-xs text-[#3A3A39] font-semibold"> <span class="text-[#FF3131] font-bold">PBREAKING NEWS:</span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eveniet fugit. Cum amet iusto tempore  </p>  
-                        </div>
-                        <div class="bg-white  items-center md:mt-7 mt-4 md:h-[55px] ">
-                            <div class="flex justify-between w-full ">
-                                <div class="flex w-[90%] items-center ">
-                                    <div class="md:w-auto w-1/5 md:px-6 p-2 flex justify-center items-center bg-[#264293] h-full font-bold  ">
-                                        <p class=" text-xs text-white text-center"> TRANG CHỦ</p>   
-                                    </div>
-                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">CỘNG ĐỒNG INSIDER</div>
-                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">VIỆT NAM HÔM NAY</div>
-                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">QUẢN TRỊ & KHỞI NGHIỆP</div>
-                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">BẢN TIN THẾ GIỚI</div>
-                                </div>
-                                <div  onclick="search()" class="bg-[#264293] w-[10%] md:w-[55px] md:h-[55px] px-2 flex justify-center items-center">
-                                    <img class="md:w-10 md:h-10" src="./img/Search_alt.png" alt="">
-                                </div>
-
+        <div class="container mx-auto">
+            <div class="bg-white mt-4">
+                <div class="flex justify-between items-center ">
+                    <ul class="flex md:h-[50px] items-center md:ml-4 ">
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Trợ giúp</li>
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Liên hệ quảng cáo</li>
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Hướng dẫn </li>
+                    </ul>
+                    <div class="md:mr-24">
+                        <div class="md:flex">
+                            <div class="md:w-[100px] md:h-[32px] m-1 bg-[#264293] rounded-full  flex justify-center items-center md:mr-5">
+                                <a class=" px-2 py-1  text-white  text-xs " href="">Đăng nhập</a>
                             </div>
-                           
-                        </div>
-                        <div id="cs_showSearch" class="  bg-[#FAFAFA] mt-4 w-2/3 h-[40px] rounded-full relative  hidden">
-                            <input class=" pl-14 w-full h-full bg-[#FAFAFA] rounded-full   " type="text" placeholder="Search">
-                            <img class="w-5 h-5 absolute top-2.5 left-6" src="./img/Union.png" alt="">
+                            <div class="md:w-[100px] md:h-[32px] m-1 bg-[#777E90] rounded-full  flex justify-center items-center">
+                            <a class=" px-2 py-1  text-white  text-xs " href="">Đăng ký</a>
+                            </div>
                         </div>
 
-                        
                     </div>
                 </div>
+
             </div>
-            
+            <div class="w-full ">
+                <div class="md:flex">
+                    <div class="pt-2 w-1/7">
+                        <img  class="h-[138px] w-[184px] md:m-0 mx-auto" src="./img/Group_427320855.png" alt="">
+                    </div>
+                    <div class="pt-4  w-full">
+                        <div class="">
+                            <div class="bg-white  ">
+                            <marquee>
+                                <div class="w-full flex items-center md:h-[55px] p-4 ">
+                                    <img class="w-6 h-6 md:ml-4 mr-2" src="./img/Filled.png" alt=""> 
+                                    <p class="text-xs text-[#3A3A39] font-semibold"> <span class="text-[#FF3131] font-bold">PBREAKING NEWS:</span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eveniet fugit. Cum amet iusto tempore  </p>  
+                                </div>
+                                </marquee>
+                            </div>
+                            <div class="bg-white  items-center md:mt-7 mt-4 md:h-[55px] ">
+                                <div class="flex justify-between w-full ">
+                                    <div id="menu_button" class="menu_button flex w-[90%] items-center ">
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">TRANG CHỦ</button>
+                                       <button class="btn active h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">CỘNG ĐỒNG INSIDER</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">VIỆT NAM HÔM NAY</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">QUẢN TRỊ & KHỞI NGHIỆP</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">BẢN TIN THẾ GIỚI</button>
+                                   </div>
+                                    <div class="bg-[#264293] w-[10%] md:w-[55px] md:h-[55px] px-2 flex justify-center items-center">
+                                        <img class="md:w-10 md:h-10" src="./img/Search_alt.png" alt="">
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
 
     </header>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<style>
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    
+    /* Style the active class, and buttons on mouse-over */
+    .active, .btn:hover {
+      background-color: #666;
+      color: white;
+    }
+    </style>
+<body>
+    <div class="container grid-cols-5 grid ">
+        <div class="relative w-[50px] h-[50px] rounded-full border-2">
+            <img class="absolute bottom-[-5px] right-[calc(50%-4px)] h-2 w-2" src="./img/star.svg" alt="">
+        </div>
+        <div class="relative w-[50px] h-[50px] rounded-full border-2">
+            <img class="absolute bottom-[-4px] rotate-12 right-[calc(50%+0.5px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-4px] -rotate-12  left-[calc(50%+0.5px)] h-2 w-2" src="./img/star.svg" alt="">
+        </div>
+        <div class="relative w-[50px] h-[50px] rounded-full border-2">
+            <img class="absolute bottom-[-3px] rotate-[25deg] right-[calc(50%+5px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-5px] right-[calc(50%-4px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-3px] -rotate-[25deg] left-[calc(50%+5px)] h-2 w-2" src="./img/star.svg" alt="">
+        </div>
+        <div class="relative w-[50px] h-[50px] rounded-full border-2">
+            <img class="absolute bottom-[-1px] rotate-[30deg] right-[calc(50%+9px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-4px] rotate-12 right-[calc(50%+0.5px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-4px] -rotate-12  left-[calc(50%+0.5px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-1px] -rotate-[30deg]  left-[calc(50%+9px)] h-2 w-2" src="./img/star.svg" alt="">
+        </div>
+        <div class="relative w-[50px] h-[50px] rounded-full border">
+            <img class="absolute bottom-[2px] rotate-45 right-[calc(50%+13px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-3px] rotate-[25deg] right-[calc(50%+5px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-5px] right-[calc(50%-4px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[-3px] -rotate-[25deg] left-[calc(50%+5px)] h-2 w-2" src="./img/star.svg" alt="">
+            <img class="absolute bottom-[2px] -rotate-45 left-[calc(50%+13px)] h-2 w-2" src="./img/star.svg" alt="">
+        </div>
+    </div>
+    <div>
+        <h1>Active Button</h1>
+<p>Highlight the active/current (pressed) button.</p>
+  
+<div id="myDIV">
+  <button class="btn">1</button>
+  <button class="btn active">2</button>
+  <button class="btn">3</button>
+  <button class="btn">4</button>
+  <button class="btn">5</button>
+</div>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+    </div>
+</body>
+</html> 

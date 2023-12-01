@@ -12,10 +12,10 @@
         content: "";
         position: absolute;
         width: 3px;
-        height: 100%;
+        height: calc(100% - 50px);
         background-color: rgb(229 231 235);
         left: 22px;
-        top: 0;
+        bottom: 0;
     }
     .line_comment1::before {
         content: "";
@@ -109,172 +109,79 @@
 .toggle input[type="checkbox"]:checked + label:after {
   left: 17px;
 }
+.active {
+  background-color: #264293;
+  color: white !important;
+}
 </style>
 <body class="bg-[#EBEAEA]">
     <header>
         <div>
-            <img class="md:h-[270px] h-[200px] object-fill" src="./img/Rectangle_1328.png" alt="">
+            <img class="md:h-[270px] h-[200px] w-full object-fill" src="./img/Rectangle_1328.png" alt="">
         </div>
-        <div class="bg-white mt-4">
-            <div class="relative flex justify-between items-center ">
-                <ul class="flex md:h-[50px] items-center md:ml-4 ">
-                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Trợ giúp</li>
-                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Liên hệ quảng cáo</li>
-                    <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Hướng dẫn </li>
-                </ul>
-                <div class="md:relative flex justify-end items-center md:w-[30%]">
-                    <button class="button_notification">
-                        <img class="w-7 h-7" src="./img/Bell_pin.png" alt="">
-                    </button>
-                    <div class="notification hidden absolute top-11 w-full  bg-white shadow-xl">
-                        <div class="flex items-center p-3 border-b-2 justify-between">
-                            <div>
-                                <h3 class="text-base font-medium text-[#08539F]">Thông báo</h3>
+        <div class="container mx-auto">
+            <div class="bg-white mt-4">
+                <div class="flex justify-between items-center ">
+                    <ul class="flex md:h-[50px] items-center md:ml-4 ">
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Trợ giúp</li>
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Liên hệ quảng cáo</li>
+                        <li class="text-[#401C1C] font-medium md:p-3 px-2 md:text-base text-sm">Hướng dẫn </li>
+                    </ul>
+                    <div class="md:mr-24">
+                        <div class="md:flex">
+                            <div class="md:w-[100px] md:h-[32px] m-1 bg-[#264293] rounded-full  flex justify-center items-center md:mr-5">
+                                <a class=" px-2 py-1  text-white  text-xs " href="">Đăng nhập</a>
                             </div>
-                            <div class="flex items-center">
-                                <p class="text-sm">Chỉ hiển thị tin nhắn chưa đọc</p>
-                                <div class="px-2">
-                                    <div class="toggle">
-                                        <input type="checkbox"/>
-                                        <label></label>
-                                    </div>
-                                </div>
+                            <div class="md:w-[100px] md:h-[32px] m-1 bg-[#777E90] rounded-full  flex justify-center items-center">
+                            <a class=" px-2 py-1  text-white  text-xs " href="">Đăng ký</a>
                             </div>
                         </div>
-                        <div class="my-3 border-b-2 ">
-                            <div class="">
-                                <div class="w-auto h-full flex  px-3 py-2 bg-[#E2EDF8]">
-                                    <img class="w-[40px] h-[40px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <div class="flex items-center">
-                                            <p class="text-sm font-bold text-black " >Thảo vi <span class="font-normal">đã đăng 1 bài viết</span> </p>
-                                        </div>
-                                        <p class="text-xs text-gray-500 py-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</p>
-                                        <p class="text-[10px] text-gray-500 ">24 tháng 11 3:30</p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="">
-                                <div class="w-auto h-full flex  px-3 py-2 bg-white">
-                                    <img class="w-[40px] h-[40px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <div class="flex items-center">
-                                            <p class="text-sm font-bold text-black " >Thảo vi <span class="font-normal">đã đăng 1 bài viết</span> </p>
-                                        </div>
-                                        <p class="text-xs text-gray-500 py-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</p>
-                                        <p class="text-[10px] text-gray-500 ">24 tháng 11 3:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-3 ">
-                            <div class="">
-                                <div class="w-auto h-full flex  px-3 py-2 bg-[#E2EDF8]">
-                                    <img class="w-[40px] h-[40px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <div class="flex items-center">
-                                            <p class="text-sm font-bold text-black " >Thảo vi <span class="font-normal">đã đăng 1 bài viết</span> </p>
-                                        </div>
-                                        <p class="text-xs text-gray-500 py-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</p>
-                                        <p class="text-[10px] text-gray-500 ">24 tháng 11 3:30</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <div class="w-auto h-full flex  px-3 py-2 bg-white">
-                                    <img class="w-[40px] h-[40px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <div class="flex items-center">
-                                            <p class="text-sm font-bold text-black " >Thảo vi <span class="font-normal">đã đăng 1 bài viết</span> </p>
-                                        </div>
-                                        <p class="text-xs text-gray-500 py-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</p>
-                                        <p class="text-[10px] text-gray-500 ">24 tháng 11 3:30</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <div class="w-auto h-full flex  px-3 py-2 bg-[#E2EDF8]">
-                                    <img class="w-[40px] h-[40px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <div class="flex items-center">
-                                            <p class="text-sm font-bold text-black " >Thảo vi <span class="font-normal">đã đăng 1 bài viết</span> </p>
-                                        </div>
-                                        <p class="text-xs text-gray-500 py-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</p>
-                                        <p class="text-[10px] text-gray-500 ">24 tháng 11 3:30</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <div class="w-auto h-full flex  px-3 py-2 bg-white">
-                                    <img class="w-[40px] h-[40px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                                    <div>
-                                        <div class="flex items-center">
-                                            <p class="text-sm font-bold text-black " >Thảo vi <span class="font-normal">đã đăng 1 bài viết</span> </p>
-                                        </div>
-                                        <p class="text-xs text-gray-500 py-1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor porta vestibulum.</p>
-                                        <p class="text-[10px] text-gray-500 ">24 tháng 11 3:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center md:mx-5 ml-3">
-                        <img class="w-[40px] h-[40px] object-cover mr-2" src="./img/Group_1277.png" alt="">
-                        <button class="flex  items-center">
-                            <div class="flex items-center">
-                                <h3 class="md:text-base text-sm text-[#3A3A39] font-bold" >Hạ My</h3>
-                            </div>
-                            <div class="text-[#3A3A39] md:px-4 px-2 font-bold">
-                                <img src="./img/Vector.png" alt="">
-                            </div>
-                        </button>
                     </div>
                 </div>
-             </div>
 
-        </div>
-        <div class="w-full  md:pl-9">
-            <div class="md:flex">
-                <div class="pt-2 w-1/7">
-                    <img  class="h-[138px] w-[184px] md:m-0 mx-auto" src="./img/Group_427320855.png" alt="">
-                </div>
-                <div class="pt-4  w-full">
-                    <div class="">
-                        <div class="bg-white w-full flex items-center p-4  md:h-[55px]">
-                            <img class="w-6 h-6 md:ml-4 mr-2" src="./img/Filled.png" alt=""> 
-                             <p class="text-xs text-[#3A3A39] font-semibold"> <span class="text-[#FF3131] font-bold">PBREAKING NEWS:</span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eveniet fugit. Cum amet iusto tempore  </p>  
-                        </div>
-                        <div class="bg-white  items-center md:mt-7 mt-4 md:h-[55px] ">
-                            <div class="flex justify-between w-full ">
-                                <div class="flex w-[90%] items-center ">
-                                    <div class="md:w-auto w-1/5 md:px-6 p-2 flex justify-center items-center bg-[#264293] h-full font-bold  ">
-                                        <p class=" text-xs text-white text-center"> TRANG CHỦ</p>   
-                                    </div>
-                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">CỘNG ĐỒNG INSIDER</div>
-                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">VIỆT NAM HÔM NAY</div>
-                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">QUẢN TRỊ & KHỞI NGHIỆP</div>
-                                    <div class="md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">BẢN TIN THẾ GIỚI</div>
-                                </div>
-                                <div class="bg-[#264293] w-[10%] md:w-[55px] md:h-[55px] px-2 flex justify-center items-center">
-                                    <img class="md:w-10 md:h-10" src="./img/Search_alt.png" alt="">
-                                </div>
-
-                            </div>
-                           
-                        </div>
-                        
-                    </div>
-                </div>
             </div>
-            
+            <div class="w-full ">
+                <div class="md:flex">
+                    <div class="pt-2 w-1/7">
+                        <img  class="h-[138px] w-[184px] md:m-0 mx-auto" src="./img/Group_427320855.png" alt="">
+                    </div>
+                    <div class="pt-4  w-full">
+                        <div class="">
+                            <div class="bg-white  ">
+                            <marquee>
+                                <div class="w-full flex items-center md:h-[55px] p-4 ">
+                                    <img class="w-6 h-6 md:ml-4 mr-2" src="./img/Filled.png" alt=""> 
+                                    <p class="text-xs text-[#3A3A39] font-semibold"> <span class="text-[#FF3131] font-bold">PBREAKING NEWS:</span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eveniet fugit. Cum amet iusto tempore  </p>  
+                                </div>
+                                </marquee>
+                            </div>
+                            <div class="bg-white  items-center md:mt-7 mt-4 md:h-[55px] ">
+                                <div class="flex justify-between w-full ">
+                                    <div id="menu_button" class="menu_button flex w-[90%] items-center ">
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">TRANG CHỦ</button>
+                                       <button class="btn active h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3   ">CỘNG ĐỒNG INSIDER</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">VIỆT NAM HÔM NAY</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">QUẢN TRỊ & KHỞI NGHIỆP</button>
+                                       <button class="btn h-full md:text-xs text-[10px]  font-bold md:w-auto w-1/5 text-center text-[#3A3A39] md:px-3  ">BẢN TIN THẾ GIỚI</button>
+                                   </div>
+                                    <div class="bg-[#264293] w-[10%] md:w-[55px] md:h-[55px] px-2 flex justify-center items-center">
+                                        <img class="md:w-10 md:h-10" src="./img/Search_alt.png" alt="">
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
 
     </header>
-    <section class="mt-5 md:flex"  >
+    <section class="container mx-auto mt-5 md:flex"  >
         <div class="md:w-1/4 w-full ">
             <div class="w-full bg-white">
                 <div class="p-5">
@@ -286,12 +193,15 @@
                     </div>
                 </div>
                 <div class="p-4">
-                    <div class="flex">
-                        <div class="w-1/3">
-                                <img class="w-[59px] h-[63px]" src="./img/Group_1277.png" alt="">
+                    <div class="flex items-center">
+                        <div class="w-1/3 relative h-[60px] flex items-center">
+                            <img class="w-[50px] h-[50px] object-cover " src="./img/avater.svg" alt="">
+                            <div class="absolute left-[-3px] top-[2px] ">
+                                <img class="w-[56px] h-[58px] " src="./img/kim cương.png" alt="">
+                            </div>
                         </div>
-                        <div class="ml-5 w-full">
-                            <div class="flex justify-between  pb-7 border-b-[1px]  border-[#E6E6E6]">
+                        <div class="ml-5 w-full   ">
+                            <div class="flex justify-between  ">
                                 <div>
                                     <h1 class="text-[13px] font-bold text-[#264293]">Thảo Vi</h1>
                                 <p class="text-xs">Thành Viên Bạch Kim</p>
@@ -300,81 +210,105 @@
                                     <img class="w-5 h-5" src="./img/Group_1251.png" alt="">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <div class="flex">
-                        <div class="w-1/3">
-                                <img class="w-[59px] h-[63px]" src="./img/Group_1277.png" alt="">
-                        </div>
-                        <div class="ml-5 w-full">
-                            <div class="flex justify-between  pb-7 border-b-[1px]  border-[#E6E6E6]">
-                                <div>
-                                    <h1 class="text-[13px] font-bold text-[#264293]">Thảo Vi</h1>
-                                <p class="text-xs">Thành Viên Bạch Kim</p>
-                                </div>
-                                <div class="flex items-center">
-                                    <img class="w-5 h-5" src="./img/Group_1251.png" alt="">
-                                </div>
+                            <div>
+                                <div class="w-full h-px bg-[#E6E6E6] translate-y-6 "></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="p-4">
-                    <div class="flex">
-                        <div class="w-1/3">
-                                <img class="w-[59px] h-[63px]" src="./img/Group_1277.png" alt="">
-                        </div>
-                        <div class="ml-5 w-full">
-                            <div class="flex justify-between  pb-7 border-b-[1px]  border-[#E6E6E6]">
-                                <div>
-                                    <h1 class="text-[13px] font-bold text-[#264293]">Thảo Vi</h1>
-                                <p class="text-xs">Thành Viên Bạch Kim</p>
-        
-                                </div>
-                                <div class="flex items-center">
-                                    <img class="w-5 h-5" src="./img/Group_1251.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <div class="flex">
-                        <div class="w-1/3">
-                                <img class="w-[59px] h-[63px]" src="./img/Group_1277.png" alt="">
-                        </div>
-                        <div class="ml-5 w-full">
-                            <div class="flex justify-between  pb-7 border-b-[1px]  border-[#E6E6E6]">
-                                <div>
-                                    <h1 class="text-[13px] font-bold text-[#264293]">Thảo Vi</h1>
-                                <p class="text-xs">Thành Viên Bạch Kim</p>
+                    <div class="flex items-center">
+                        <div class="w-1/3 relative h-[60px] flex items-center">
+                            <img class="w-[50px] h-[50px] object-cover " src="./img/avater.svg" alt="">
+                            <div class="absolute left-[-3px] top-[2px] ">
+                                <img class="w-[56px] h-[58px] " src="./img/kim cương.png" alt="">
 
+                            </div>
+                        </div>
+                        <div class="ml-5 w-full   ">
+                            <div class="flex justify-between  ">
+                                <div>
+                                    <h1 class="text-[13px] font-bold text-[#264293]">Thảo Vi</h1>
+                                <p class="text-xs">Thành Viên Bạch Kim</p>
                                 </div>
                                 <div class="flex items-center">
                                     <img class="w-5 h-5" src="./img/Group_1251.png" alt="">
                                 </div>
                             </div>
+                            <div>
+                                <div class="w-full h-px bg-[#E6E6E6] translate-y-6 "></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="p-4">
-                    <div class="flex">
-                        <div class="w-1/3">
-                                <img class="w-[59px] h-[63px]" src="./img/Group_1277.png" alt="">
+                    <div class="flex items-center">
+                        <div class="w-1/3 relative h-[60px] flex items-center">
+                            <img class="w-[50px] h-[50px] object-cover " src="./img/avater.svg" alt="">
+                            <div class="absolute left-[-3px] top-[2px] ">
+                                <img class="w-[56px] h-[58px] " src="./img/kim cương.png" alt="">
+
+                            </div>
                         </div>
-                        <div class="ml-5 w-full">
-                            <div class="flex justify-between  pb-7 border-b-[1px]  border-[#E6E6E6]">
+                        <div class="ml-5 w-full   ">
+                            <div class="flex justify-between  ">
                                 <div>
                                     <h1 class="text-[13px] font-bold text-[#264293]">Thảo Vi</h1>
                                 <p class="text-xs">Thành Viên Bạch Kim</p>
-        
                                 </div>
                                 <div class="flex items-center">
                                     <img class="w-5 h-5" src="./img/Group_1251.png" alt="">
                                 </div>
+                            </div>
+                            <div>
+                                <div class="w-full h-px bg-[#E6E6E6] translate-y-6 "></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center">
+                        <div class="w-1/3 relative h-[60px] flex items-center">
+                            <img class="w-[50px] h-[50px] object-cover " src="./img/avater.svg" alt="">
+                            <div class="absolute left-[-3px] top-[2px] ">
+                                <img class="w-[56px] h-[58px] " src="./img/kim cương.png" alt="">
 
+                            </div>
+                        </div>
+                        <div class="ml-5 w-full   ">
+                            <div class="flex justify-between  ">
+                                <div>
+                                    <h1 class="text-[13px] font-bold text-[#264293]">Thảo Vi</h1>
+                                <p class="text-xs">Thành Viên Bạch Kim</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img class="w-5 h-5" src="./img/Group_1251.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="w-full h-px bg-[#E6E6E6] translate-y-6 "></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center">
+                        <div class="w-1/3 relative h-[60px] flex items-center">
+                            <img class="w-[50px] h-[50px] object-cover " src="./img/avater.svg" alt="">
+                            <div class="absolute left-[-3px] top-[2px] ">
+                                <img class="w-[56px] h-[58px] " src="./img/kim cương.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="ml-5 w-full   ">
+                            <div class="flex justify-between  ">
+                                <div>
+                                    <h1 class="text-[13px] font-bold text-[#264293]">Thảo Vi</h1>
+                                <p class="text-xs">Thành Viên Bạch Kim</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img class="w-5 h-5" src="./img/Group_1251.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -400,9 +334,16 @@
                     <div class="p-4 ">
                         <div class="flex ">
                             <div class="w-auto h-full flex items-center">
-                                <img class="w-[40px] h-[40px] object-cover mr-2" src="./img/Group_1277.png" alt="">
                                 <div>
-                                    <div class="flex items-center">
+                                    <div class="relative h-[60px] w-[60px] flex items-center">
+                                        <img class="w-[50px] h-[50px] object-cover " src="./img/avater.svg" alt="">
+                                        <div class="absolute left-[-3px] top-[2px] ">
+                                            <img class="w-[56px] h-[58px] " src="./img/kim cương.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ml-2">
+                                    <div class="flex items-center ">
                                         <h3 class="text-base text-gray-500" >Thảo vi</h3>
                                         <div class="w-auto px-8">
                                                 <img src="./img/rate.png" alt="">
@@ -480,7 +421,14 @@
                             <div class="pt-4">
                                 <div class="flex relative py-2 ">
                                     <div class="flex-shrink-0 w-fit h-fit rounded-full  inline-flex items-center justify-center text-white relative z-10">
-                                        <img class="w-[50px] h-[50px] object-cover " src="./img/Group_1277.png" alt="">
+                                        <div>
+                                            <div class="relative h-[60px] w-[60px] flex items-center">
+                                                <img class="w-[50px] h-[50px] object-cover " src="./img/avater.svg" alt="">
+                                                <div class="absolute left-[-3px] top-[2px] ">
+                                                    <img class="w-[56px] h-[58px] " src="./img/kim cương.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="line_comment flex-grow pl-4 bg-gray-200 rounded-xl p-2 mx-2">
@@ -513,7 +461,14 @@
                                     <div class=" pl-5 relative line_comment1 after:content-[''] after:w-10 after:h-[3px] after:bg-gray-200 after:-left-4 after:top-[20px] after:absolute  ">
                                         <div class="flex">
                                             <div class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
-                                                <img class="w-[40px] h-[40px] object-cover " src="./img/Group_1277.png" alt="">
+                                                <div>
+                                                    <div class="relative h-[50px] w-[50px] flex items-center">
+                                                        <img class="w-[40px] h-[40px] object-cover " src="./img/avater.svg" alt="">
+                                                        <div class="absolute left-[-2.5px] top-[3px] ">
+                                                            <img class="w-[45px] h-[46px] " src="./img/kim cương.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="">
                                                 <div class="flex-grow pl-4 bg-gray-200 rounded-xl p-2 mx-2">
@@ -548,7 +503,14 @@
                                     <div class=" pl-5 relative last_line_comment after:content-[''] after:w-10 after:h-[3px] after:bg-gray-200 after:-left-4 after:top-[20px] after:absolute  ">
                                         <div class="flex">
                                             <div class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
-                                                <img class="w-[40px] h-[40px] object-cover " src="./img/Group_1277.png" alt="">
+                                                <div>
+                                                    <div class="relative h-[50px] w-[50px] flex items-center">
+                                                        <img class="w-[40px] h-[40px] object-cover " src="./img/avater.svg" alt="">
+                                                        <div class="absolute left-[-2.5px] top-[3px] ">
+                                                            <img class="w-[45px] h-[46px] " src="./img/kim cương.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="">
                                                 <div class="flex-grow pl-4 bg-gray-200 rounded-xl p-2 mx-2">
@@ -583,7 +545,16 @@
                                 </div>
                                 <div class="flex relative py-2">
                                     <div class="flex-shrink-0 w-fit h-fit rounded-full  inline-flex items-center justify-center text-white relative z-10">
-                                        <img class="w-[50px] h-[50px] object-cover " src="./img/Group_1277.png" alt="">
+                                        <div>
+                                            <div>
+                                                <div class="relative h-[60px] w-[60px] flex items-center">
+                                                    <img class="w-[50px] h-[50px] object-cover " src="./img/avater.svg" alt="">
+                                                    <div class="absolute left-[-3px] top-[2px] ">
+                                                        <img class="w-[56px] h-[58px] " src="./img/kim cương.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div>
                                         <div class=" flex-grow pl-4 bg-gray-200 rounded-xl p-2 mx-2">
@@ -631,6 +602,16 @@
 
     </section>
     <script>
+         var header = document.getElementById("menu_button");
+         var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+            }
+
         var button_notification = document.querySelector(".button_notification");
         var notification = document.querySelector(".notification");
 
@@ -641,6 +622,7 @@
                 notification.style.display = "none";
             }
         });
+       
     </script>
 </body>
 </html>

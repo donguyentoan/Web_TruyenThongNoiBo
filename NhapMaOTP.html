@@ -6,6 +6,11 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+    input:focus{
+        outline:0;
+    }
+</style>
 <body>
 
     <section class="bg-[#EBEAEA]">
@@ -22,17 +27,17 @@
                         </div>
                         <div class="pt-2">
                             <div class="flex ">
-                                <div class="bg-white w-[70px] h-[85px] rounded-md mr-2 border-[1px] border-[#5D4037] "></div>
-                                <div class="bg-white w-[70px] h-[85px] rounded-md mr-2 "></div>
-                                <div class="bg-white w-[70px] h-[85px] rounded-md  mr-2"></div>
-                                <div class="bg-white w-[70px] h-[85px] rounded-md  mr-2"></div>
-                                <div class="bg-white w-[70px] h-[85px] rounded-md  mr-2"></div>
+                                <input maxlength="1" class="bg-white w-[70px] focus:border-[#5D4037] focus:border h-[85px] text-3xl text-center  rounded-md mr-2 "></input>
+                                <input maxlength="1" class="bg-white w-[70px] focus:border-[#5D4037] focus:border h-[85px] text-3xl text-center  rounded-md mr-2 "></input>
+                                <input maxlength="1" class="bg-white w-[70px] focus:border-[#5D4037] focus:border h-[85px] text-3xl text-center  rounded-md  mr-2"></input>
+                                <input maxlength="1" class="bg-white w-[70px] focus:border-[#5D4037] focus:border h-[85px] text-3xl text-center  rounded-md  mr-2"></input>
+                                <input maxlength="1" class="bg-white w-[70px] focus:border-[#5D4037] focus:border h-[85px] text-3xl text-center  rounded-md  mr-2"></input>
     
                             </div>
     
                         </div>
                         <div class="text-center pt-1 ">
-                            <p class="text-sm text-[#3A3A39] pt-4">Vẫn chưa có mã xác nhận?   <span class="text-[#264293] text-sm font-bold">Gửi lại</span></p>
+                            <p class="text-sm text-[#3A3A39] pt-4">Vẫn chưa có mã xác nhận?   <a href="" class="text-[#264293] text-sm font-bold">Gửi lại</a></p>
                         </div>
 
                     </div>
