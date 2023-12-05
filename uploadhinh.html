@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <script>
+        var loadFile = function (event) {
+            var output = document.getElementById('output');
+            output.src = URL.createObjectURL(event.target.files[0]);
+    
+            output.onload = function () {
+                URL.revokeObjectURL(output.src);
+                   output.style.display = 'block';
+            };
+    
+         
+        };
+    </script>
+    
+    <input id="upload" type="file" name="image" accept="image/*" onchange="loadFile(event)" style="display: none;">
+    
+    <label for="upload">
+        <div>
+            <img class="object-contain" alt="" loading="lazy" id="output" style="display: none;">
+            <div>
+                <img class="object-contain" alt="" loading="lazy" src="{{ asset('assets/insider/img/uplaod.png') }}">
+            </div>
+            <p>Tải ảnh lên</p>
+        </div>
+    </label>
+    
+    
+    
+</body>
+</html>

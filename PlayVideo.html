@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Proper Tailwind CSS Script (Modify this based on your project setup) -->
+    <!-- <link rel="stylesheet" href="path/to/tailwind.css"> -->
+
+    <title>Your Page Title</title>
+</head>
+<body>
+    <!-- Your existing HTML structure with modifications -->
+    <div class="relative w-1/4 slick-slide slick-current slick-active" data-youtube="https://www.youtube.com/embed/1sMJ5TzzC-E" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 302px;">
+        <img class="brightness-50 w-full h-[430px] object-cover" src="./img/bg-2.webp" alt="">
+        <div class="absolute bottom-0 px-5">
+            <p class="text-white font-semibold py-2 text-sm">We are Viet Nam</p>
+        </div>
+        <div class="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center play-video-button">
+            <div class="w-14 h-14 bg-red-600 rounded-full flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-fill pl-1" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript code to initialize Fancybox -->
+    <script>
+        $(document).ready(function () {
+            // Initialize Fancybox
+            $('.play-video-button').click(function() {
+                var youtubeUrl = $(this).closest('.slick-slide').data('youtube') + '?autoplay=1&mute=1'; // Thêm 'mute=1'
+                $.fancybox.open({
+                    src: youtubeUrl,
+                    type: 'iframe',
+                    iframe: {
+                        preload: false
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -113,6 +113,7 @@
   background-color: #264293;
   color: white !important;
 }
+
 </style>
 <body class="bg-[#EBEAEA]">
     <header>
@@ -385,15 +386,23 @@
                                 <button class="flex justify-center items-center text-[#264293]  ">
                                     <div class="group relative">
                                         <img class="w-6 h-6 relative" src="./img/Line.png" alt="">
-                                         <img class="hidden w-6 h-6 group-hover:block absolute top-0" src="./img/Filleds.png" alt="">
-
+                                        <img id="click_like" class="w-6 h-6 group-hover:block absolute top-0 hidden" src="./img/Filleds.png" alt="">
                                     </div>
-                                    
-                                    <p class="text-base ml-2">Thích</p> 
-                                    
-                                  
-                                   
+                                    <p class="text-base ml-2">Thích</p>
                                 </button>
+                                
+                                <script>
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                        var click_like = document.getElementById('click_like');
+                                
+                                        click_like.addEventListener('click', function () {
+                                            click_like.classList.toggle('hidden');
+                                        });
+                                    });
+                                </script>
+                                
+
+                               
                             </div>
                             <div class="w-auto flex justify-center items-center">
                                 <button class="flex justify-center items-center text-[#264293] ">
@@ -601,28 +610,6 @@
         </div>
 
     </section>
-    <script>
-         var header = document.getElementById("menu_button");
-         var btns = header.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-            });
-            }
-
-        var button_notification = document.querySelector(".button_notification");
-        var notification = document.querySelector(".notification");
-
-        button_notification.addEventListener('click', function() {
-            if (notification.style.display === "none" || notification.style.display === "") {
-                notification.style.display = "block";
-            } else {
-                notification.style.display = "none";
-            }
-        });
-       
-    </script>
+   
 </body>
 </html>
